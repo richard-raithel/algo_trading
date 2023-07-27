@@ -1,17 +1,13 @@
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
-
-import datetime  # For datetime objects
-import os.path  # To manage paths
-import sys  # To find out the script name (in argv[0])
-
-# Import the backtrader platform
+from __future__ import (absolute_import, division, print_function, unicode_literals)
+import datetime
 import backtrader as bt
 import pandas as pd
+import os.path
+import sys
 
 
 # PARAMETERS -------------
-FILENAME = 'stock_onemin.csv'
+FILENAME = 'data/stock_onemin.csv'
 STARTING_CASH = 25000
 STAKE_PERCENT = 0.5
 BROKER_COMISH = 0

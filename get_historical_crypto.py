@@ -23,15 +23,15 @@ bars = client.get_crypto_bars(request_params)
 bars_df = bars.df
 
 # save to csv, remove symbol comlumn, rename timestamp column, add adj close column
-bars_df.to_csv('crypto_onemin.csv')
-data = pd.read_csv('crypto_onemin.csv')
+bars_df.to_csv('data/crypto_onemin.csv')
+data = pd.read_csv('data/crypto_onemin.csv')
 data = data.drop('symbol', axis=1)
 data = data.rename(columns={"timestamp": "date"})
 data = data.reset_index(drop=True)
 data.insert(5, 'Adj Close', data['close'])
 
 # save to csv
-data.to_csv('crypto_onemin.csv', index=False)
+data.to_csv('data/crypto_onemin.csv', index=False)
 print(data.head())
 
 #
