@@ -5,9 +5,9 @@ To perform backtesting:
 
 1. Put your data into this format in a csv file and save it to the 'data' folder:
    
-date,open,high,low,close,Adj Close,volume,trade_count,vwap
+   date,open,high,low,close,Adj Close,volume,trade_count,vwap
 
-2023-01-30 09:00:00+00:00,178.5,178.96,176.23,176.8,176.8,79410.0,1673.0,178.111354
+   2023-01-30 09:00:00+00:00,178.5,178.96,176.23,176.8,176.8,79410.0,1673.0,178.111354
 
 3. Create a .env file and put it in the same directory as the backtest.py script.It must include your unique API keys obtained from aplaca.markets. The two necessary keys are: API_KEY_PAPER and SECRET_KEY_PAPER
 
