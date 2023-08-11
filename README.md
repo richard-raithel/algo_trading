@@ -3,7 +3,7 @@ This repo contains scripts to backtest custom trading algorithms and indicators.
 
 To perform backtesting:
 
-1. Put your data into this format in a csv file and save it to the 'data' folder:
+1. Put your data into this format in a csv file and save it to the 'data' folder:\n
 date,open,high,low,close,Adj Close,volume,trade_count,vwap
 2023-01-30 09:00:00+00:00,178.5,178.96,176.23,176.8,176.8,79410.0,1673.0,178.111354
 
